@@ -1,0 +1,11 @@
+.idea/
+target/
+*.iml
+
+#  Application files
+*.apk
+
+# Images files
+*.png
+*.html
+.DS_Store
