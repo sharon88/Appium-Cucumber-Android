@@ -1,0 +1,17 @@
+{
+  "android": {
+    "platformName": "android",
+    "app": "./build/wordpress.apk",
+    "automationName":"uiautomator2",
+    "appWaitActivity":"org.wordpress.android.ui.accounts.SignInActivity",
+    "deviceName": "android",
+    "noSign": true
+  },
+  "hostMachines": [
+    {
+
+      "machineIP": "127.0.0.1",
+      "appiumServerPath": "/usr/local/lib/node_modules/appium/build/lib/main.js"
+    }
+  ]
+}

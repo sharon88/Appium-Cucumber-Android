@@ -1,21 +1,22 @@
-package com.mobile.wordpress.Steps;
+package com.mobile.wordpress.steps;
 
-import com.mobile.wordpress.Pages.NotificationPage;
+import com.appium.manager.AppiumDriverManager;
+import com.mobile.wordpress.pages.NotificationPage;
 import cucumber.api.java.en.Then;
-import org.testng.Assert;
 
-import static com.mobile.wordpress.Utils.Strings.FIRST_NOTE;
-import static com.mobile.wordpress.Utils.Strings.FIRST_NOTE_DES;
+public class NotificationSteps{
 
-public class NotificationSteps extends NotificationPage {
+    NotificationPage notificationPage = new NotificationPage(AppiumDriverManager.getDriver());
+
 
     @Then("^I navigate to my first post$")
     public void iNavigateToMyFirstPost() {
-        navigateToFirstPost();
-        String firstNote = driver.findElements(POST_ID).get(0).getText();
-        Assert.assertEquals(firstNote, FIRST_NOTE);
-        String firstNoteDesc = driver.findElements(POST_ID).get(1).getText();
-        Assert.assertEquals(firstNoteDesc, FIRST_NOTE_DES);
-
+        notificationPage.navigateToFirstPost();
+//        MobileElement element = (MobileElement)driver.findElements(POST_ID).get(0);
+//        String firstNote = element.getText();
+//        Assert.assertEquals(firstNote, FIRST_NOTE);
+//        MobileElement element2 = (MobileElement)driver.findElements(POST_ID).get(1);
+//        String firstNoteDesc = element2.getText();
+//        Assert.assertEquals(firstNoteDesc, FIRST_NOTE_DES);
     }
 }

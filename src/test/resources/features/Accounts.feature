@@ -8,7 +8,7 @@ Feature: Accounts
     And I am signed in to the app
     Then I click on Account tab
 
-  @account2
+  @account2 @a
   Scenario: As a user i sign out
     Given I am in the application landing screen
     When  I enter user credentials
