@@ -8,6 +8,6 @@ public class RunnerCukes {
     @Test
     public void testCukesRunner() throws Exception {
         ATDRunner parallelThread = new ATDRunner();
-        parallelThread.runner("");
+        parallelThread.runner("output");
     }
 }

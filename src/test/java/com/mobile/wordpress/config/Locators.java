@@ -7,7 +7,7 @@ public class Locators {
     public static final By USERNAME_ID = MobileBy.id("nux_username");
     public static final By PASSWORD_ID = MobileBy.id("nux_password");
     public static final By SIGNIN_BUTTON = MobileBy.id("nux_sign_in_button");
-    public static final By LOGGED_IN_TITLE_ID = MobileBy.id("my_site_title_label");
+    public static final By LOGGED_IN_TITLE_ID = MobileBy.id("tab_icon");
     public static final By SIGNOUT = MobileBy.id("me_login_logout_text_view");
     public static final By CONFIRM_LOGOUT_BUTTON = By.id("android:id/button1");
     public static final By CANCEL_LOGOUT_BUTTON = By.id("android:id/button2");
