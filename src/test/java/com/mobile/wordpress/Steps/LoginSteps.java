@@ -37,6 +37,7 @@ public class LoginSteps{
 
     @Then("^I am signed in to the app$")
     public void iAmSignedInToTheApp() {
+        loginPage.waitForElementToDeDisplayed(LOGGED_IN_TITLE_ID);
         Assert.assertTrue(loginPage.elementExists(LOGGED_IN_TITLE_ID));
     }
 

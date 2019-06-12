@@ -18,6 +18,8 @@ public class Helpers {
 
     public Helpers(AppiumDriver<MobileElement> driver) {
         this.driver = driver;
+        wait = new WebDriverWait(driver, 60);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
 
@@ -38,9 +40,8 @@ public class Helpers {
         return driver.findElement(id).getText();
     }
 
-    public void waitForElementToDeDisplayed(By id){
-        wait.until(ExpectedConditions.visibilityOfElementLocated(id));
-
+    public void waitForElementToDeDisplayed(By id) {
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(id)));
     }
 
 }
