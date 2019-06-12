@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public abstract class Config {
 
-    public static AppiumDriver<AndroidElement> driver = AppiumDriverManager.getDriver();
-    public static WebDriverWait wait = new WebDriverWait(driver,30);
+    public AppiumDriver<AndroidElement> driver = AppiumDriverManager.getDriver();
+    public WebDriverWait wait = new WebDriverWait(driver,30);
 
 }

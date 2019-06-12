@@ -1,5 +1,6 @@
-.idea/
-target/
+.idea/*
+TitanAndroidAutomation.iml
+target/*
 *.iml
 
 #  Application files
@@ -9,3 +10,5 @@ target/
 *.png
 *.html
 .DS_Store
+src/test/java/output/*.java
+test-output/*
